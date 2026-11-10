@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<html lang="id">
+@extends('layouts.customer')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+@section('title', 'when yh - KopiKita')
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+@section('content')
 
-    <title>KopiKita</title>
-</head>
+    <section class="min-h-screen flex items-center justify-center">
 
-<body class="bg-amber-50 p-10">
+        <div class="text-center">
 
-    <h1 class="text-5xl font-bold text-amber-900">
-        KopiKita.
-    </h1>
+            <h1 class="font-display text-6xl font-bold text-coffee-700">
+                KopiKita.
+            </h1>
 
-    <p class="mt-4 text-gray-600">
-        Secangkir kopi, sejuta cerita.
-    </p>
+            <p class="mt-4 text-lg text-gray-600">
+                Secangkir kopi, sejuta cerita dengan dirinya, v.
+            </p>
 
-</body>
+        </div>
 
-</html>
+    </section>
+
+@endsection
