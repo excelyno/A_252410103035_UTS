@@ -74,9 +74,93 @@
     </main>
 
     {{-- Footer --}}
-    <footer>
-        @yield('footer')
+
+    <footer class="bg-coffee-900 text-white">
+
+        <div class="mx-auto max-w-7xl px-6 py-16">
+
+            {{-- Footer Main --}}
+            <div class="grid gap-12 md:grid-cols-3">
+
+                {{-- Brand --}}
+                <div>
+                    <a href="/" class="text-3xl font-extrabold tracking-tight">
+                        Kopi<span class="text-amber-400">Kita.</span>
+                    </a>
+
+                    <p class="mt-5 max-w-xs text-sm leading-relaxed text-white/50">
+                        Secangkir kopi, sejuta cerita.
+                        Menghadirkan pengalaman kopi terbaik
+                        untuk menemani setiap momenmu.
+                    </p>
+                </div>
+
+                {{-- Navigation --}}
+                <div>
+                    <h3 class="font-bold">Navigasi</h3>
+
+                    <ul class="mt-5 space-y-3 text-sm text-white/50">
+                        <li>
+                            <a href="/" class="transition hover:text-amber-400">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/#menu" class="transition hover:text-amber-400">
+                                Menu Kopi
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/#about" class="transition hover:text-amber-400">
+                                Tentang Kami
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/#contact" class="transition hover:text-amber-400">
+                                Kontak
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                {{-- Contact --}}
+                <div>
+                    <h3 class="font-bold">Hubungi Kami</h3>
+
+                    <ul class="mt-5 space-y-3 text-sm text-white/50">
+                        <li>Jember, Jawa Timur</li>
+                        <li>kopikita@example.com</li>
+                        <li>Senin - Minggu</li>
+                        <li>08.00 - 22.00 WIB</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            {{-- Copyright --}}
+            <div class="mt-14 border-t border-white/10 pt-7">
+
+                <div class="flex flex-col justify-between gap-4 text-sm text-white/40 md:flex-row">
+
+                    <p>
+                        © {{ date('Y') }} KopiKita. All rights reserved.
+                    </p>
+
+                    <p>
+                        Crafted with passion
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </footer>
+
 
 </body>
 
