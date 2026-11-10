@@ -10,3 +10,25 @@
     --color-coffee-700: #5b3827;
     --color-coffee-900: #241a15;
 }
+
+@layer components {
+    .card {
+        @apply rounded-2xl border border-coffee-100 bg-white shadow-sm;
+    }
+
+    .btn-primary {
+        @apply rounded-xl bg-coffee-700 px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-coffee-500;
+    }
+
+    .btn-secondary {
+        @apply rounded-xl border border-coffee-100 bg-white px-5 py-3 text-sm font-semibold text-coffee-900 transition duration-200 hover:bg-coffee-50;
+    }
+
+    .section-title {
+        @apply text-xl font-bold tracking-tight text-coffee-900;
+    }
+
+    .section-description {
+        @apply mt-1 text-sm leading-relaxed text-gray-500;
+    }
+}
