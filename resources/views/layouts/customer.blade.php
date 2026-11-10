@@ -8,6 +8,11 @@
     <title>@yield('title', 'KopiKita')</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-coffee-50 font-sans text-coffee-900 antialiased">
