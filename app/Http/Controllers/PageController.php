@@ -48,5 +48,35 @@ class PageController extends Controller
     return view('admin.menu', ['menus' => $menus]);
 }
 
-    
+    public function inventaris()
+{
+    $inventaris = [
+        [
+            'bahan' => 'Biji Kopi Arabika',
+            'satuan' => 'Kg',
+            'stok' => 15,
+            'minimum' => 5,
+        ],
+        [
+            'bahan' => 'Susu Full Cream',
+            'satuan' => 'Liter',
+            'stok' => 3,
+            'minimum' => 5,
+        ],
+        [
+            'bahan' => 'Gula Aren',
+            'satuan' => 'Kg',
+            'stok' => 8,
+            'minimum' => 3,
+        ],
+        [
+            'bahan' => 'Bubuk Matcha',
+            'satuan' => 'Kg',
+            'stok' => 2,
+            'minimum' => 4,
+        ],
+    ];
+
+    return view('admin.inventaris', compact('inventaris'));
+}
 }
