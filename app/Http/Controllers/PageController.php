@@ -79,4 +79,18 @@ class PageController extends Controller
 
     return view('admin.inventaris', compact('inventaris'));
 }
+
+public function profile()
+{
+    $admin = [
+        'nama' => 'Excel Yanto',
+        'email' => 'admin@kopikita.com',
+        'jabatan' => 'Administrator',
+        'telepon' => '081234567890',
+        'alamat' => 'Jember, Jawa Timur',
+        'bergabung' => '10 November 2026',
+    ];
+
+    return view('admin.profile', compact('admin'));
+}
 }

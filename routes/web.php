@@ -10,3 +10,4 @@ Route::get('/login', [PageController::class, 'login']);
 Route::get('/admin/dashboard', [PageController::class, 'dashboard']);
 Route::get('/admin/menu', [PageController::class, 'menu']);
 Route::get('/admin/inventaris', [PageController::class, 'inventaris']);
+Route::get('/admin/profile', [PageController::class, 'profile']);
